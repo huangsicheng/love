@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>自转公转</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<style type="text/css">
+			body{
+				background: url(images/timg2.gif) no-repeat;
+				height: 770px;
+				background-size:cover;
+			}
+			#all{
+				height: 100%;
+				width: 100%;
+				margin: 0 auto;
+				transform-style: preserve-3d;
+				transform:rotateX(-70deg) rotateY(20deg);
+				position: relative;
+			}
+			.d1{
+				height: 300px;
+				width:300px;
+				border-radius: 50%;
+				border:2px solid gold;
+				position: absolute;
+				left: 0;
+				right: 0;
+				top: -600px;
+				bottom: 0;
+				margin: auto;
+				/*box-shadow: 5px 5px 20px gold;*/
+				transform-style: preserve-3d;
+				z-index: -1;
+				animation: self 15s linear infinite;
+			}
+			.d1 span{
+				height: 300px;
+				width: 300px;
+				position: absolute;
+				border: 2px solid gold;
+				border-radius: 50%;
+				box-shadow: 5px 5px 30px gold;
+			}
+			.circle01{
+				height: 600px;
+				width:600px;
+				border-radius: 50%;
+				border:2px solid #fff;
+				position: absolute;
+				left: 0;
+				right: 0;
+				top: 0;
+				bottom: 0;
+				margin: auto;
+				box-shadow: 5px 5px 20px #fff;
+				transform-style: preserve-3d;
+				animation: go 30s linear infinite;
+			}
+			.circle01 span{
+				width: 100px;
+				height: 100px;
+				position: absolute;
+				border: 2px solid red;
+				border-radius: 50%;
+				box-shadow: 5px 5px 30px red;
+			}
+			.circle02{
+				height: 750px;
+				width:750px;
+				border-radius: 50%;
+				border:2px solid #fff;
+				position: absolute;
+				left: 0;
+				right: 0;
+				top: 0;
+				bottom: 0;
+				margin: auto;
+				box-shadow: 5px 5px 20px #fff;
+				transform-style: preserve-3d;
+				animation: go 20s linear infinite;
+			}
+			.circle02 span{
+				width: 60px;
+				height: 60px;
+				position: absolute;
+				top: 154px;
+				right: 0;
+				border: 2px solid blue;
+				border-radius: 50%;
+				box-shadow: 5px 5px 30px blue;
+			}
+			.circle03{
+				height: 950px;
+				width:950px;
+				border-radius: 50%;
+				border:2px solid #fff;
+				position: absolute;
+				left: 0;
+				right: 0;
+				top: 0;
+				bottom: 0;
+				margin: auto;
+				box-shadow: 5px 5px 20px #fff;
+				transform-style: preserve-3d;
+				animation: go 10s linear infinite;
+			}
+			.circle03 span{
+				width: 30px;
+				height: 30px;
+				position: absolute;
+				top: 575px;
+				right: 0;
+				border: 2px solid purple;
+				border-radius: 50%;
+				box-shadow: 5px 5px 30px purple;
+			}
+			.circle span:nth-child(1){
+				transform: rotateY(0deg);
+			}
+			.circle span:nth-child(2){
+				transform: rotateY(40deg);
+			}
+			.circle span:nth-child(3){
+				transform: rotateY(80deg);
+			}
+			.circle span:nth-child(4){
+				transform: rotateY(120deg);
+			}
+			.circle span:nth-child(5){
+				transform: rotateY(160deg);
+			}
+			.circle span:nth-child(6){
+				transform: rotateY(200deg);
+			}
+			.circle span:nth-child(7){
+				transform: rotateY(240deg);
+			}
+			.circle span:nth-child(8){
+				transform: rotateY(280deg);
+			}
+			.circle span:nth-child(9){
+				transform: rotateY(320deg);
+			}
+			.circle span:nth-child(10){
+				transform: rotateX(0deg);
+			}
+			.circle span:nth-child(11){
+				transform: rotateX(40deg);
+			}
+			.circle span:nth-child(12){
+				transform: rotateX(80deg);
+			}
+			.circle span:nth-child(13){
+				transform: rotateX(120deg);
+			}
+			.circle span:nth-child(14){
+				transform: rotateX(160deg);
+			}
+			.circle span:nth-child(15){
+				transform: rotateX(200deg);
+			}
+			.circle span:nth-child(16){
+				transform: rotateX(240deg);
+			}
+			.circle span:nth-child(17){
+				transform: rotateX(280deg);
+			}
+			.circle span:nth-child(18){
+				transform: rotateX(320deg);
+			}
+			@-webkit-keyframes self{
+				100%{
+					transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+				}
+			}
+			@-webkit-keyframes go{
+				0%{
+					transform: rotateZ(0deg);
+				}
+				100%{
+					transform: rotateZ(360deg);
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div id="all">
+			<div class="d1 circle">
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<div class="circle01 circle">
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<div class="circle02 circle">
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<div class="circle03 circle">
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+	</body>
+</html>
