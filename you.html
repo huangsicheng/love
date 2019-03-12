@@ -3,15 +3,12 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>旋转相册</title>
-		<link rel="stylesheet" type="text/css" href="css/reset.css" />
 		<style type="text/css">
 			body{
 				height: 100%;
-				background: url(images/timg2.gif);
-				/*perspective:1000px;*/
+				background: url(images/timg1.gif);
 			}
 			#all{
-				/*perspective:9000px;*/
 				width: 280px;
 				height: 400px;
 				position: fixed;
@@ -21,18 +18,21 @@
 				bottom: 0;
 				margin: auto;
 				transform-style: preserve-3d;
-				animation: gosky 30s linear infinite;
+				animation: gosky 80s linear infinite;
 			}
 			#all img{
 				width: 280px;
-				height: 400px;
+				height: 300px;
 				position: absolute;
 				left: 0;
 				top: 0;
 			}
+			#all:hover{
+				animation-play-state:paused;
+                -webkit-animation-play-state:paused;
+			}
 			#all img:nth-child(1){
 				transform:rotateY(0deg) translateZ(600px);
-				/*animation: go 5s linear;*/
 			}
 			#all img:nth-child(2){
 				transform:rotateY(36deg) translateZ(600px);
@@ -62,49 +62,46 @@
 				transform:rotateY(324deg) translateZ(600px);
 			}
 			#all img:first-child:hover{
-				/*animation: go 5s linear;*/
+				animation: go 5s linear;
 			}
 			 .taiji{
 				position: fixed;
 				right: 0;
 				bottom: 0;
 			}
-			/*@-webkit-keyframes go{
-				10%{transform: translateZ(-200px);}
-			}*/
 			@-webkit-keyframes gosky{
 				0%{
-					transform: rotateX(20deg) rotateY(0deg);
+					transform: rotateX(15deg) rotateY(-180deg);
 				}
 				10%{
-					transform: rotateX(0deg) rotateY(180deg);
+					transform: rotateX(0deg) rotateY(360deg);
 				}
 				20%{
-					transform: rotateX(-20deg) rotateY(360deg);
+					transform: rotateX(-15deg) rotateY(540deg);
 				}
 				30%{
-					transform: rotateX(0deg) rotateY(480deg);
+					transform: rotateX(0deg) rotateY(720deg);
 				}
 				40%{
-					transform: rotateX(20deg) rotateY(760deg);
+					transform: rotateX(15deg) rotateY(1080deg);
 				}
 				50%{
-					transform: rotateX(0deg) rotateY(940deg);
+					transform: rotateX(0deg) rotateY(1440deg);
 				}
 				60%{
-					transform: rotateX(-20deg) rotateY(1120deg);
+					transform: rotateX(-15deg) rotateY(1800deg);
 				}
 				70%{
-					transform: rotateX(0deg) rotateY(1300deg);
+					transform: rotateX(0deg) rotateY(2160deg);
 				}
 				80%{
-					transform: rotateX(20deg) rotateY(1480deg);
+					transform: rotateX(15deg) rotateY(2520deg);
 				}
 				90%{
-					transform: rotateX(0deg) rotateY(1660deg);
+					transform: rotateX(0deg) rotateY(2880deg);
 				}
 				100%{
-					transform: rotateX(20deg) rotateY(1840deg);
+					transform: rotateX(15deg) rotateY(3240deg);
 				}	
 			}
 		</style>
@@ -121,9 +118,8 @@
 			<img src="images/img7.jpg" />
 			<img src="images/img8.jpg" />
 			<img src="images/img9.jpg" />
-			<audio src="audio/kenan.mp3" autoplay loop></audio>
-			<img src="images/a.gif" class="taiji"/>
+			<audio src="images/kenan.mp3" autoplay loop></audio>
+			<!--<img src="images/a.gif" class="taiji"/>-->
 		</div>
-		<!--<img src="images/20.jpg" class="taiji"/>-->
 	</body>
 </html>
